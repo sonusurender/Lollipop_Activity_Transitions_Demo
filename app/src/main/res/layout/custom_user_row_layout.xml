@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="82dp"
+    android:background="?android:selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_horizontal_margin">
+
+    <!--  For each sharing view, set attribute transitionName FROM  -->
+
+    <View
+        android:id="@+id/user_circle"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/circle_bg"
+        android:transitionName="@string/transition_name_circle" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_toRightOf="@+id/user_circle"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Harsh"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:transitionName="@string/transition_name_name" />
+
+        <TextView
+            android:id="@+id/user_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+91 9876436718"
+            android:textColor="#9f9f9f"
+            android:textSize="15sp"
+            android:transitionName="@string/transition_name_phone" />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Activity Transitions Demo</string>
+    <string name="details_activity_label">User Details</string>
+    <string name="main_activity_label">Users</string>
+
+    <!--  Specify the common transition name  -->
+    <string name="transition_name_name">transition:NAME</string>
+    <string name="transition_name_circle">transition:CIRCLE</string>
+    <string name="transition_name_phone">transition:PHONE</string>
+
+
+</resources>
